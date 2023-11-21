@@ -22,7 +22,7 @@ public class DbBicis extends DBHelper {
         values.put("color", color);
         values.put("midaMarc", midaMarc);
 
-        long id = db.insert(TABLE_BICIS, null, values);
+        long id = db.insert(DBHelper.TABLE_BICIS, null, values);
 
         return id;
 
