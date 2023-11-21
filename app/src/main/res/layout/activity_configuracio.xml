@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="toMain"
+    tools:context=".ConfiguracioActivity">
+
+    <TextView
+        android:id="@+id/qmarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Quina marca?"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/EditMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Trek, Specialized...."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/qmarca"
+        app:layout_constraintStart_toStartOf="@+id/qmarca"
+        app:layout_constraintTop_toBottomOf="@+id/qmarca"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quin model?"
+        app:layout_constraintEnd_toEndOf="@+id/EditMarca"
+        app:layout_constraintStart_toStartOf="@+id/EditMarca"
+        app:layout_constraintTop_toBottomOf="@+id/EditMarca" />
+
+    <EditText
+        android:id="@+id/EditModel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Carrera, endurance, escalada...."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quin color?"
+        app:layout_constraintEnd_toEndOf="@+id/EditModel"
+        app:layout_constraintStart_toStartOf="@+id/EditModel"
+        app:layout_constraintTop_toBottomOf="@+id/EditModel" />
+
+    <EditText
+        android:id="@+id/EditColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Groc, vermell ..."
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Quina es la mida del marc?"
+        app:layout_constraintEnd_toEndOf="@+id/EditColor"
+        app:layout_constraintStart_toStartOf="@+id/EditColor"
+        app:layout_constraintTop_toBottomOf="@+id/EditColor" />
+
+    <EditText
+        android:id="@+id/EditMida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="58, 60, 65 ..."
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="@+id/textView4"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/tornarMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="toMain"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/EditMida"
+        app:layout_constraintStart_toStartOf="@+id/EditMida"
+        app:layout_constraintTop_toBottomOf="@+id/EditMida" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
