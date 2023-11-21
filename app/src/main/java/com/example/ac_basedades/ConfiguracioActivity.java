@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 import com.example.ac_basedades.entities.Bici;
 import com.example.ac_basedades.singelton.BiciBase;
-//import com.example.ac_basedades.sqlite.DbBicis;
+import com.example.ac_basedades.sqlite.DbBicis;
 
 public class ConfiguracioActivity extends AppCompatActivity {
     private Bici bici;
@@ -53,9 +53,8 @@ public class ConfiguracioActivity extends AppCompatActivity {
 
         BiciBase.get().addBici(bici);
 
-       // DbBicis dbBicis = new DbBicis(ConfiguracioActivity.this);
-
-        //dbBicis.insertarBicis(marca,model,color,mida);
+       DbBicis dbBicis = new DbBicis(ConfiguracioActivity.this);
+       dbBicis.insertarBicis(marca,model,color,mida);
 
         Intent i =new Intent(ConfiguracioActivity.this, MainActivity.class);
         i.putExtra("configuracioBici", bici);
